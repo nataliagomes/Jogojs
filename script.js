@@ -10,17 +10,28 @@ let d7 = document.querySelector(".d7");
 let d8 = document.querySelector(".d8");
 let d9 = document.querySelector(".d9");
 
-let click = 1
+
+let jogadores = {
+    jogador1:[],
+    jogador2:[]
+}
+let click = 1;
 function jogar(event){
     console.log(click);
     if(click % 2 == 0){
         event.target.style.backgroundImage = 'url(img/x.png)';
+        jogadores.jogador1.push(click);
+        
         click ++;
     }else{
         event.target.style.backgroundImage = 'url(img/o.png)';
+        jogadores.jogador2.push(click);
+
         click++;
     }
 }
+
+
 
 
 
