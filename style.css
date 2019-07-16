@@ -1,0 +1,59 @@
+body{
+    display: grid;
+    grid-template-areas: 'd1 d2 d3'
+                         'd4 d5 d6'
+                         'd7 d8 d9' ;
+    grid-gap: 2px;
+    grid-template-columns: 33.3vw 33.3vw 33vw;
+    grid-template-rows: 33vh 33vh 33vh;
+    background-color: violet;
+    margin: 0;
+}
+div{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    background-size: cover;
+}
+.d1{
+    grid-area: d1;
+}
+
+.d2{
+    grid-area: d2;
+}
+
+.d3{
+    grid-area: d3;
+}
+
+.d4{
+    grid-area: d4;
+}
+
+.d5{
+    grid-area: d5;
+}
+
+.d6{
+    grid-area: d6;
+}
+
+.d7{
+    grid-area: d7;
+}
+
+.d8{
+    grid-area: d8;
+}
+
+.d9{
+    grid-area: d9;
+}
+
+.bolinha{
+    background-image: url('img/o.png')
+}
+.xis{
+    background-image: url('img/x.png')
+}
