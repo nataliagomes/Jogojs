@@ -1,17 +1,26 @@
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+section{
+    height: 600px;
+    width: 600px;
     display: grid;
     grid-template-areas: 'd1 d2 d3'
                          'd4 d5 d6'
                          'd7 d8 d9' ;
     grid-gap: 2px;
-    grid-template-columns: 33.3vw 33.3vw 33vw;
-    grid-template-rows: 33vh 33vh 33vh;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     background-color: violet;
     margin: 0;
 }
 div{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     background-color: white;
     background-size: cover;
 }
@@ -57,3 +66,14 @@ div{
 .xis{
     background-image: url('img/x.png')
 }
+.botao {
+font-family: comic;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+cursor:pointer;
+border-radius:15px;
+border:3px solid violet;
+}
+

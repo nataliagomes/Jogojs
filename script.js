@@ -1,4 +1,5 @@
-let divs = document.querySelectorAll("div");
+let divs = document.querySelectorAll('div');
+let button = document.querySelector('input');
 
 let d1 = document.querySelector(".d1");
 let d2 = document.querySelector(".d2");
@@ -32,10 +33,12 @@ function jogar(event){
 }
 
 
+//function resetar (event){ for()}
 
 
 
 for(let div of divs){
     div.onclick = jogar;
 }
+
 
