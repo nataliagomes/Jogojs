@@ -47,34 +47,4 @@ function clicar(event){
 
 for(let div of divs){
     div.onclick = clicar;
-
-
-
-
-//  ISSO AQUI ABAIXO É O QUE EU TENTEI FAZER MAS falhei miseravelmente,
-//  basicamente eu tentei criar uma função que analisasse a imagem que tivesse
-//  em cada parâmetro da função e que me desse retorno apenas se nas 3 divs as imagens fossem iguais.
-//  depois, criei uma função que contivesse todas as divs selecionadas que dão vitoria e coloquei pra que a
-//  função de validarCasas analisasse as divs
-//  não deu muito certo mas se quiserem reaproveitar a lógica ou mostrar pra um ninja ver se a lógica tá correta
-// e ver o que pode alterar nisso.
-
-//         function validarCasas (casa1, casa2, casa3){
-//             let cs1 = casa1.style.backgroundImage;
-//             let cs2 = casa2.style.backgroundImage;
-//             let cs3 = casa3.style.backgroundImage;
-            
-//             return cs1 === cs2 && cs2 === cs3;
-//         }
-        
-//         function possibilidadeVitoria (){
-//             return(validarCasas(divs[0], divs[3], divs[6]) || 
-//                    validarCasas(divs[1], divs[4], divs[7]) || 
-//                    validarCasas(divs[2], divs[5], divs[8]) || 
-//                    validarCasas(divs[0], divs[4], divs[8]) || 
-//                    validarCasas(divs[2], divs[4], divs[6]) || 
-//                    validarCasas(divs[0], divs[1], divs[2]) || 
-//                    validarCasas(divs[3], divs[4], divs[5]) || 
-//                    validarCasas(divs[6], divs[7], divs[8]));
-//         }
-// }
+}
