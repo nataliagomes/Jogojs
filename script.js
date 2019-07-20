@@ -48,7 +48,6 @@ function validarVitoria(){
         }
 
     //validarVitoriaO
-
     else if(divs[0].classList.contains('O') && divs[1].classList.contains('O') && divs[2].classList.contains('O') ||
             divs[3].classList.contains('O') && divs[4].classList.contains('O') && divs[5].classList.contains('O') ||
             divs[6].classList.contains('O') && divs[7].classList.contains('O') && divs[8].classList.contains('O') ||
@@ -59,5 +58,20 @@ function validarVitoria(){
             divs[2].classList.contains('O') && divs[5].classList.contains('O') && divs[8].classList.contains('O') ){
         alert('Jogador O foi o vencedor! Parabéns');
         window.location.reload();
+    }else{
+        verificarVelha()
+    }
+}
+
+function verificarVelha(){
+    let jogadas = 0;
+    for (let index = 0; index <= divs.length - 1; index++){
+        if(divs[index].classList != ''){
+            jogadas++
+            if(jogadas == divs.length){
+                alert("EMPATE! O jogo deu velha.");
+                window.location.reload();
+            }
+        }
     }
 }
