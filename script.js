@@ -8,7 +8,7 @@ let click = 1;
 function clicar(event){
     
     console.log(click);    
-
+    
     if(event.target.classList.contains('X') || (event.target.classList.contains('O'))){
         alert('Jogava inválida. Tente novamente!');
     }
