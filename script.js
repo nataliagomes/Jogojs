@@ -46,7 +46,7 @@ function atualizarMostrador(){
 }
 
 function clicar(event){
-    console.log(click);
+
     if(event.target.classList.contains('X') || (event.target.classList.contains('O'))){
         alert('Jogava inválida. Tente novamente!');
     }
@@ -117,7 +117,6 @@ function verificarVelha(){
             if(jogadas == divs.length){
                 alert("EMPATE! O jogo deu velha.");
                 limparTabuleiro();
-                // window.location.reload();
             }
         }
     }
