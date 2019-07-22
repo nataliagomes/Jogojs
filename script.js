@@ -3,6 +3,7 @@ window.onload =	function() {document.getElementById('tabuleiro').style.visibilit
                             document.getElementById('mostrador').style.visibility = 'hidden';
                             document.getElementById('mostradorX').style.visibility = 'hidden';
                             document.getElementById('mostradorO').style.visibility = 'hidden';
+                            document.getElementById('jv').style.visibility = 'hidden';
                         }
 
 iniciarJogo = function(){
@@ -11,6 +12,7 @@ iniciarJogo = function(){
     document.getElementById('mostrador').style.visibility = 'visible';
     document.getElementById('mostradorX').style.visibility = 'visible';
     document.getElementById('home').style.visibility = 'hidden';
+    document.getElementById('jv').style.visibility = 'visible';
 }
 
 let jogadorX = document.getElementById('jogadorX');

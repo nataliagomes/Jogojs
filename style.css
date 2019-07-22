@@ -14,23 +14,39 @@ nav{
     align-items: center;
 }
 
-nav h1{
+nav h1, h2{
     color: aliceblue;
     font-size: 50px;
     margin-bottom: 0;
+    font-family: 'Noto Serif', serif;
+    
 }
+h2{
+    position: absolute;
+    bottom: 600px;
+    display: flex;
+    right: 560px;
+    font-size:40px; 
+
+}
+
+
 
 .bo5{
     margin-top: 0px;
     color: rgb(0, 0, 0, 0.75);
     font-size: 22px;
     font-weight: bold;
+    font-family: 'Pacifico', cursive;
 }
 
 nav p{
     color: aliceblue;
     font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: black
 }
+
 
 span{
     color: rgb(0, 0, 0, 0.8);
@@ -55,17 +71,23 @@ nav input[type=button]{
     color: aliceblue;
     cursor: pointer;
     font-size: 12px;
+    font-family: 'Noto Serif', serif;
+    border-radius:5px;
+
 }
 
-#jogadorX{
-    margin-bottom: 6px;
+#jogadorX, #jogadorO {
+    margin-bottom: 8px;
+    border-radius:6px;
+    margin: 5px;
+    font-family: 'Noto Serif', serif;'
 }
+
 
 #placar{
     display: flex;
     position: absolute;
-    z-index: 2;
-    margin-bottom: 585px;
+    bottom: 545px;
 }
 
 #placarx, #placaro{
@@ -110,14 +132,14 @@ img{
 #mostrador{
     display: flex;
     position: absolute;
-    z-index: 1;
-    margin-bottom: 480px;
+    bottom: 490px;
     font-weight: lighter;
     color: white;
 }
 
 #mostradorO{
     position: absolute;
+    
 }
 
 header{

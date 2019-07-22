@@ -9,24 +9,28 @@
     <link rel="shortcut icon" href="img/hashtag.ico" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow|Noto+Serif|Pacifico&display=swap" rel="stylesheet">
+
     <title>jogodavelha</title>
 </head>
 
 <body>
     <nav id="home">
-        <h1>#jogodavelha</h1>
+        <h1>#JogodaVelha</h1>
         <p class="bo5">melhor de 5</p>
-        <p>insira o nome dos jogadores e clique em<span> iniciar </span>para começar a partida :)</p>
+        <p>Insira o nome dos jogadores e clique em<span> iniciar </span>para começar a partida :)</p>
         <fieldset>
-            <label for="JogadorX">playerX:</label>
+            <label for="JogadorX">PlayerX:</label>
             <input class='input' type="text" maxlength="13" id='jogadorX'>
-            <label for="JogadorO">playerO:</label>
+            <label for="JogadorO">PlayerO:</label>
             <input class='input' type="text" maxlength="13" id='jogadorO'>
         </fieldset>
         <input type="button" value="Iniciar" onclick = "javascript: iniciarJogo();" >
     </nav>
+    <div id='jv'><h2>#JogodaVelha</h2></div>
 
     <div id="placar">
+       
         <div class="px" id="pxid"> <p class="x"><img src="img/xp.png" alt=""></p> 
                          <p id="placarx">0</p></div>
 
